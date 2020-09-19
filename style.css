@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, h1 {
+	
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	
+}
+
+h4 {
+	
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	
+}
+
+.navitem {
+	
+	border-radius: 5px;
+	border-width: medium;
+	border-color: #717171;
+	border-style: solid;
+	color: white;
+	text-align: center;
+	
+	transition: color 0.5s, border-color 0.5s; /* vendorless fallback */
+    -o-transition: color 0.5s, border-color 0.5s; /* opera */
+    -ms-transition: color 0.5s, border-color 0.5s; /* IE 10 */
+    -moz-transition: color 0.5s, border-color 0.5s; /* Firefox */
+    -webkit-transition: color 0.5s, border-color 0.5s; /*safari and chrome */
+	
+}
+
+.navitem:hover {
+	
+	color: lightskyblue;
+	border-color: lightskyblue;
+	
+	
+}
+
+.tidbit {
+	
+	padding: 2%;
+	
+}
+
+a {
+	
+	color: lightskyblue;
+	font-weight: 400;
+	
+}
+
+.active {
+	
+	color: lightskyblue;
+	
+}
+
+.container-fluid .row:not(.navbar) {
+	
+	padding: 2%;
+	
+}
+
+.pwrapinner {
+	
+	border-style: solid;
+	border-color: black;
+	border-width: thin;
+	margin-top: 2%;
+	
+}
+
+.pwrapinner {
+	
+	transition: transform 0.5s, background-color 0.5s;
+	margin-top: 3%;
+	
+}
+
+#pwrap a {
+	
+	text-decoration: none;
+	color: black;
+	
+}
+
+.projname {
+	
+	font-weight: 600;
+	
+}
+
+.pwrapinner:hover {
+	
+	transform: scale(1.1);
+	background-color: darkgrey;
+	
+}
+
+.projimg img {
+	
+	max-width: 75%;
+	
+}

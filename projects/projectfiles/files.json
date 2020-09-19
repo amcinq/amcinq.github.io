@@ -1,0 +1,28 @@
+{
+	"2020fuse": {
+		"name": "2020 Aircraft Fuselage Design",
+		"description": "I am using Ansys modeling tools and mechanical engineering principles to design an optimized fuselage internal structure for our 2020-2021 aircraft.",
+		"url": "2020fuse.PNG"
+
+	},
+	"ztgroup": {
+		"name": "ZT Group",
+		"description": "I am working with a group of 3 peers to design and test a novel sanitization device.",
+		"url": "ztgroup.png"
+
+	}, 
+	"ugvwheel": {
+		
+		"name": "UGV Wheel Redesign",
+		"description": "I designed and analyzed a 3D-printed flexible wheel for shock absorption on unmanned ground vehicle, which is dropped from our plane at altitude.",
+		"url": "ugvwheel.png"
+		
+	},
+	"photo": {
+		
+		"name": "Hobby Astrophotography",
+		"description": "I do night sky photography and astrophotography as a hobby.",
+		"url": "photo.jpg"
+		
+	}
+}

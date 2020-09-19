@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/amc437/amc437.github.io/style.css">
+	
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Anthony Cinquemani - UGV Redesign Project</title>
+</head>
+
+<body>
+<div class="container-fluid">
+
+	<div class="row"><div class="col"><h1>Anthony Cinquemani</h1></div><div class="col align-self-end" style="text-align: right; color: lightskyblue"><h4>Mechanical Engineering Student</h4></div></div>
+	<nav class="row navbar navbar-expand-sm navbar-dark bg-dark">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarText">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item"><a class="nav-link" href="/amc437/amc437.github.io/">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="/amc437/amc437.github.io/about">About</a></li>
+				<li class="nav-item"><a class="nav-link" href="/amc437/amc437.github.io/contact">Contact</a></li>
+				<li class="nav-item active"><a class="nav-link" href="/amc437/amc437.github.io/projects">Projects</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="row p-2">
+	<div class="col"><a class="btn btn-secondary" href="/amc437/amc437.github.io/projects" role="button">&#8592;&nbsp;Back to Projects</a></div>
+	</div>
+		<div class="row p-0"><h2 class="mx-auto d-block">UGV Wheel Redesign</h2></div>
+	<div class="row p-0"><h4 class="mx-auto d-block" style="font-style: italic">February - March 2020</h4></div>
+	<div class="media p-2">
+	<div class="media-right">
+		<img class="media-object" src="ugv-schematic.png" alt="A schematic of the UGV's flight path." style="max-width: 250px">
+	</div>
+		<div class="media-body align-self-center">
+		At the beginning of the Spring 2020 semester, I was tasked with redesigning the UGV wheels for <a href="https://www.cuair.org/" target="_blank">Cornell University Unmanned Aerial Systems (CUAir)</a>. The Unmanned Ground Vehicle (UGV) is dropped from the aircraft at altitude and guided to the ground with a parafoil. In order to prevent tangling the parafoil in the wheels, the parafoil separates prior to touchdown. Parafoil separation occurs within 10 ft of the ground, so the UGV must survive a short free fall. For this purpose, the UGV was designed with shock-absorbing wheels made of 3D-printed, flexible plastic.
+		</div>
+	</div>
+	<div class="media p-2">
+		<div class="media-body align-self-center">
+		The old UGV wheel (pictured below) had two main areas to improve upon. First, the hexagonal spaces in the wheel compressed primarily via buckling. We wanted to gain better control over the compression using a more predictable mode. Second, the design of the wheel made it such that it could not compress fully; the green lines on the figure indicate areas that can be compressed, and the red lines indicate areas that remain uncompressed. For these two reasons, the wheel did not efficiently absorb all of the energy it could from free fall. The practical result of this was that the UGV could not survive the fall; wood cracking was heard upon impact.
+		</div>
+	</div>
+	<figure class="figure mx-auto d-block p-1">
+	<img class="figure-img img-fluid mx-auto d-block" src="ugv-old.PNG" alt="The old UGV wheel." style="max-width: 450px">
+	<figcaption class="figure-caption text-center">The old UGV wheel with incompressible portions in red and compressible portions in green.</figcaption>
+			</figure>
+	<div class="media p-2">
+		<div class="media-body align-self-center">
+		The new UGV wheel was designed with these problems in mind. The wheel was designed with a bike wheel in mind, with spokes radiating from the hub. These spokes can compress fully, thus utilizing the entire space between the wheel hub and the rim. The spokes were designed in Solidworks using a circular pattern, so the number of spokes - and the effective spring constant of the wheel - can be adjusted very easily.
+		</div>
+		<div class="media-right">
+			<figure class="figure">
+			<img class="img-fluid mx-auto d-block" src="wheel-pattern.PNG" alt="The pattern used to create the UGV wheel spokes." style="max-width: 250px">
+		<figcaption class="figure-caption text-center">The pattern used to create the UGV wheel spokes.</figcaption>
+			</figure>
+	</div>
+	</div>
+	<div class="media p-2">
+		<div class="media-right">
+			<video class="media-object" style="margin: 10px;" controls width="250">
+			<source src="drop.MOV" type="video/mp4">
+				Sorry! Your browser does not support videos.
+			</video>
+		</div>
+		<div class="media-body align-self-center">
+		The wheel was 3D printed using TPU filament. I tested the wheel along with my teammates by dropping the unmanned ground vehicle with the new wheels several times from an accurate drop height and observing the results. After four tests and some adjustments to the hub interface, we found that the new wheels are fully effective in absorbing the impact energy. One of the aforementioned tests is shown here in slow motion. After adding the <a href="https://www.cuair.org" target="_blank">CUAir</a> logo to the wheel rim, my work was finished. 
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="mx-auto d-block"><h2>Finished Product</h2></div>
+	</div>
+	<div class="row justify-content-around">
+	<img class="img img-fluid p-1" src="wheel-close.png" alt="A close view of the new wheel design." style="max-height: 400px">
+	<img class="img img-fluid p-1" src="p02.png" alt="The new wheel." style="max-height: 400px">
+	</div>
+</div>
+	
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

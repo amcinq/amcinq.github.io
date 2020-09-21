@@ -1,4 +1,10 @@
 {
+	"ugvredesign": {
+		"name": "2020 UGV Full Redesign",
+		"description": "I am contributing to a fast-paced redesign of our Unmanned Ground Vehicle (UGV) that seeks to efficiently increase our competition score.",
+		"url": "ugv-schematic.PNG"
+
+	},
 	"2020fuse": {
 		"name": "2020 Aircraft Fuselage Design",
 		"description": "I am using Ansys modeling tools and mechanical engineering principles to design an optimized fuselage internal structure for our 2020-2021 aircraft.",

@@ -50,9 +50,19 @@ $().ready(function(){
 		url: window.location.href + "projects/projectfiles/files.json",
 		success: function (data) {
 			
+			var i = 1;
+			var a = 0;
+			
 			for (var p in data) {
-
-				$("#pwrap").append('<div class="pwrapinner w-50 mx-auto p-0"><a href="projects/projectfiles/' + p + '/"><div class="row justify-content-center"><div class="col projname">' + data[p].name + '</div></div><div class="row justify-content-center"><div class="col projdes">' + data[p].description + '</div></div><div class="row justify-content-center"><div class="projimg"><img src="projects/projectfiles/' + data[p].url + '" class="img-fluid mx-auto d-block"></div></div></a></div>');
+				
+				if (i == 1) {
+					$("#pwrap").append('<div class="row p-1 justify-content-around r' + a + '"><div class="col-4 pwrapinner p-0"><a href="projects/projectfiles/' + p + '/"><div class="row justify-content-center"><div class="col projname">' + data[p].name + '</div></div><div class="row justify-content-center"><div class="col projdes">' + data[p].description + '</div></div><div class="row justify-content-center"><div class="col projimg"><img src="project/projectfiles/' + data[p].url + '" class="img-fluid mx-auto d-block"></div></div></a></div>');
+					i = 0;
+				} else {
+					$(".r" + a).append('<div class="col-4 pwrapinner p-0"><a href="projects/projectfiles/' + p + '/"><div class="row justify-content-center"><div class="col projname">' + data[p].name + '</div></div><div class="row justify-content-center"><div class="col projdes">' + data[p].description + '</div></div><div class="row justify-content-center"><div class="col projimg"><img src="projects/projectfiles/' + data[p].url + '" class="img-fluid mx-auto d-block"></div></div></a></div></div>');
+					i = 1;
+					a = a + 1;
+				}
 				
 			}
 			

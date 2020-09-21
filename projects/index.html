@@ -53,10 +53,10 @@ $().ready(function(){
 			for (var p in data) {
 				
 				if (i == 1) {
-					$("#pwrap").append('<div class="row p-1 justify-content-around r' + a + '"><a class="col-4" href="projectfiles/' + p + '/"><div class="pwrapinner p-0"><div class="row justify-content-center"><div class="col projname">' + data[p].name + '</div></div><div class="row justify-content-center"><div class="col projdes">' + data[p].description + '</div></div><div class="row justify-content-center"><div class="col projimg"><img src="projectfiles/' + data[p].url + '" class="img-fluid mx-auto d-block"></div></div></div></a>');
+					$("#pwrap").append('<div class="row p-1 justify-content-around r' + a + '"><div class="col-4 pwrapinner p-0"><a href="projectfiles/' + p + '/"><div class="row justify-content-center"><div class="col projname">' + data[p].name + '</div></div><div class="row justify-content-center"><div class="col projdes">' + data[p].description + '</div></div><div class="row justify-content-center"><div class="col projimg"><img src="projectfiles/' + data[p].url + '" class="img-fluid mx-auto d-block"></div></div></a></div>');
 					i = 0;
 				} else {
-					$(".r" + a).append('<a class="col-4" href="projectfiles/' + p + '/"><div class="pwrapinner p-0"><div class="row justify-content-center"><div class="col projname">' + data[p].name + '</div></div><div class="row justify-content-center"><div class="col projdes">' + data[p].description + '</div></div><div class="row justify-content-center"><div class="col projimg"><img src="projectfiles/' + data[p].url + '" class="img-fluid mx-auto d-block"></div></div></div></a></div>');
+					$(".r" + a).append('<div class="col-4 pwrapinner p-0"><a href="projectfiles/' + p + '/"><div class="row justify-content-center"><div class="col projname">' + data[p].name + '</div></div><div class="row justify-content-center"><div class="col projdes">' + data[p].description + '</div></div><div class="row justify-content-center"><div class="col projimg"><img src="projectfiles/' + data[p].url + '" class="img-fluid mx-auto d-block"></div></div></a></div></div>');
 					i = 1;
 					a = a + 1;
 				}

@@ -53,11 +53,11 @@ $().ready(function(){
 				
 				if (i == 1) {
 					$("#pwrap").append('<div class="row"><div class="col pwrapinner w-25 mx-auto p-0"><a href="projectfiles/' + p + '/"><div class="row justify-content-center"><div class="col projname">' + data[p].name + '</div></div><div class="row justify-content-center"><div class="col projdes">' + data[p].description + '</div></div><div class="row justify-content-center"><div class="col projimg"><img src="projectfiles/' + data[p].url + '" class="img-fluid mx-auto d-block"></div></div></a></div>');
-					i = 0;
 				} else {
 					$("#pwrap").append('<div class="col pwrapinner w-25 mx-auto p-0"><a href="projectfiles/' + p + '/"><div class="row justify-content-center"><div class="col projname">' + data[p].name + '</div></div><div class="row justify-content-center"><div class="col projdes">' + data[p].description + '</div></div><div class="row justify-content-center"><div class="col projimg"><img src="projectfiles/' + data[p].url + '" class="img-fluid mx-auto d-block"></div></div></a></div></div>');
-					i = 1;
 				}
+				
+				i = !i;
 				
 			}
 			

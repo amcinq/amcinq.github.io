@@ -11,6 +11,12 @@
 		"url": "2020fuse.PNG"
 
 	},
+	"kiln": {
+		"name": "Kiln",
+		"description": "I worked with a group of friends in high school to build and program an electric kiln from scratch.",
+		"url": "kiln.png"
+
+	}, 
 	"ztgroup": {
 		"name": "ZT Group",
 		"description": "I am working with a group of 3 peers to design and test a novel sanitization device.",
